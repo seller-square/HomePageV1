@@ -2,7 +2,7 @@ import styles from './index.css';
 import React, { useState } from 'react';
 // test
 function App() {
-  const [popup, setpopup] = useState(false);
+  //const [popup, setpopup] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submit, setsubmit] = useState(true);
 
@@ -10,12 +10,12 @@ function App() {
     e.preventDefault();
     setSubmitted(true);
     setsubmit(true);
-    setpopup(true);
+  //  setpopup(true);
   };
 
   const handleCancel = () => {
     setsubmit(true);
-    setpopup(false);
+   // setpopup(false);
     setSubmitted(false);
   };
 
