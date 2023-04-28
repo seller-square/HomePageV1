@@ -246,6 +246,9 @@ display: flex;
   .container{
   display: none;
   }
+  .main-cnt{
+    display: none;
+  }
   .form-fields{
     margin-top: 3rem;
     margin-left: 6rem;
@@ -254,9 +257,12 @@ display: flex;
   .form-inp{
     width: 20rem;
   }
+  .signIn{
+    margin-left: 120px;
+  }
   .signin-btn{
     width: 20rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
   }
   .calculator-btn-2{
     display: block;
