@@ -94,7 +94,9 @@ body{
     height: 100vh;
   margin-right: -20px;
 }
-
+.tags{
+  display: none;
+}
 .ss-heading{
   font-family: Arial, Helvetica, sans-serif; 
   font-size: 20px; 
@@ -145,6 +147,7 @@ a{
 }
 .box{
 display: flex;
+margin-top: 20px;
 }
 .box-1{
   width: 48px; 
@@ -159,14 +162,14 @@ display: flex;
   width: 70%;
   margin-left: 1px;
   margin-top: 5px;
-  height: 60px;
+  height: 62px;
    background: #FFFFFFFF; 
-  border-radius: 4px; 
+  border-radius: 0px 2px 2px 0px; 
   box-shadow: 0px 2px 2px gray, 0px 0px 2px gray;
 }
 .icon {
-  margin-left: 5px;
-  margin-top: 10px;
+  margin-left: 7px;
+  margin-top: 14px;
    }
 .para{
   margin-top: 0px;
@@ -177,6 +180,7 @@ display: flex;
   line-height: 28px; 
   color: #171A1FFF;
 }
+
 .popup{
 
   position: absolute; 
@@ -232,7 +236,11 @@ display: flex;
 .popup-btn:disabled {
   opacity: 0.4; 
   }
-
+  .hidden:after {
+       background-color: rgba(0,0,0,0.5);
+    z-index: 9998;
+    color: #ffffff;
+  }
   /* Styles for desktop */
 .element {
   font-size: 20px;
@@ -249,16 +257,44 @@ display: flex;
   .main-cnt{
     display: none;
   }
+  .tags{
+    margin-top: -40px;
+    display: block;
+    text-align: right;
+  }
+  .ss-heading-2{
+    color: black;
+  }
+  .beta-2{
+    color: black;
+  }
+  .logo{
+    height: 40px;
+    width: 40px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
   .form-fields{
     margin-top: 3rem;
-    margin-left: 6rem;
+    margin-left: 0rem;
     margin-right: 0rem;
   }
   .form-inp{
-    width: 20rem;
+    width: 17rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+  }
+  .ss-heading-2{
+    /* text-align: left; */
+    font-size: 10px;
+  }
+  .beta-2{
+    /* text-align: left; */
+    font-size: 10px;
   }
   .signIn{
     margin-left: 120px;
+    margin-right: -50px;
   }
   .signin-btn{
     width: 20rem;
@@ -284,5 +320,59 @@ display: flex;
     border-radius: 6px; 
     font-family: Arial, Helvetica, sans-serif;
   }
-  
+  .popup{
+
+    position: absolute; 
+    top: 100px; 
+    left: 30px; 
+    width: 300px; 
+    height: 200px; 
+    background: #FFFFFFFF; 
+    border-radius: 6px; 
+    box-shadow: 0px 4px 9px #171a1f, 0px 0px 2px #171a1f; 
+  }
+  .popupText{
+       position: absolute; 
+      top: 10px; 
+      left: 24px; 
+      width: 280px; 
+      font-family: Arial, Helvetica, sans-serif; 
+      font-size: 14px; 
+      line-height: 22px; 
+      color: #171A1FFF; 
+    }
+    .popup-btn{
+      /* Button 1939 */
+   position: absolute; 
+    top: 0x; 
+    left: 200px; 
+    width: 74px; 
+    height: 36px; 
+    padding: 0 12px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #FFFFFFFF; 
+    background: #00BDD6FF; 
+    opacity: 1; 
+    border: none; 
+    border-radius: 4px; 
+  }
+  /* Hover */
+  .popup-btn:hover {
+    color: #FFFFFFFF; 
+    background: #00A9C0FF; 
+  }
+  /* Pressed */
+  .popup-btn:hover:active {
+    color: #FFFFFFFF; 
+    background: #0095A9FF; 
+  }
+  /* Disabled */
+  .popup-btn:disabled {
+    opacity: 0.4; 
+    }
 }
