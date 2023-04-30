@@ -17,8 +17,10 @@ function App() {
     setsubmit(true);
     // setpopup(false);
     setSubmitted(false);
-  };
+    document.body.classList.remove('popup-opened');
 
+  };
+  // document.body.style.opacity = "1";
   return (
 
     <div className={styles.App}>
@@ -29,6 +31,10 @@ function App() {
           <div className="">
             <img className='logo' src="/logo.png" alt="Company Logo" />
           </div>
+          <div className='tags'>
+            <h1 className='ss-heading-2'>Seller Square</h1>
+            <p className='beta-2'>Beta </p>
+                      </div>
           <div className='main'>
             <div className='form-fields'>
               <div>
@@ -59,11 +65,11 @@ function App() {
             <div className='main-cnt'>
               <div className='container'>
                 <h1 className='ss-heading'>Seller Square</h1>
-                <p className='beta'>Beta Version</p>
+                <p className='beta'>Beta </p>
                 <h1 className='heading'>The Most Comprehensive Amazon Profit Calculator</h1>
                 <div className='box'>
                   <div className='box-1'>
-                  <img className='icon' src="/check-mark.png" alt="Company Logo" />
+                    <img className='icon' src="/check-mark.png" alt="Company Logo" />
                   </div>
                   <div className='box-2'>
                     <p className='para'>Simulate profits at different selling prices on Amazon to <br></br> optimise pricing</p>
@@ -71,19 +77,19 @@ function App() {
                 </div>
                 <div className='box'>
                   <div className='box-1'>
-                  <img className='icon' src="/check-mark.png" alt="Company Logo" />
+                    <img className='icon' src="/check-mark.png" alt="Company Logo" />
                   </div>
                   <div className='box-2'>
-                    <p className='para'>Calculate precise margins on Amazon across local, regional<br/> and national regions</p>
+                    <p className='para'>Calculate precise margins on Amazon across local, regional<br /> and national regions</p>
                   </div>
                 </div>
                 <div className='box'>
                   <div className='box-1'>
-                  <img className='icon' src="/check-mark.png" alt="Company Logo" />
+                    <img className='icon' src="/check-mark.png" alt="Company Logo" />
 
                   </div>
                   <div className='box-2'>
-                    <p className='para'>Simulate profits at different discounts to participate in<br/> Amazon deals and Coupons</p>
+                    <p className='para'>Simulate profits at different discounts to participate in<br /> Amazon deals and Coupons</p>
                   </div>
                 </div>
                 <a href="http://margin-analyzer.sellersquare.in/"><button className='calculator-btn' type="submit"> Free Amazon Profit Calculator </button></a>
@@ -93,7 +99,7 @@ function App() {
         </div>
       }
       {submitted &&
-        <div className='hidden'>
+        <div className="hidden">
           <div className='popup'>
             <p className='popupText'>We are currently not allowing new user sign up on the portal. Please reach out to support@sellersquare.in for further details</p>
             <button type="submit" className='popup-btn' onClick={handleCancel} href="">Cancel</button>
