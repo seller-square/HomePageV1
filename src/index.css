@@ -117,14 +117,14 @@ body{
 }
 .heading{
   font-family: Arial, Helvetica, sans-serif; 
-  font-size: 32px; 
+  font-size: px; 
   line-height: 48px; 
   color: white; 
   text-align: center;
   margin-bottom: 80px;
 }
 .calculator-btn{
-  margin-left: 12rem;
+  margin-left: 13rem;
   margin-top: 3rem;
   width: 20rem; 
   height: 3.5rem; 
@@ -151,6 +151,7 @@ a{
 .box{
 display: flex;
 margin-top: 45px;
+margin-left: 1rem;
 }
 .box-1{
   width: 48px; 
@@ -169,6 +170,7 @@ margin-top: 45px;
    background: #FFFFFFFF; 
   border-radius: 0px 2px 2px 0px; 
   box-shadow: 0px 2px 2px gray, 0px 0px 2px gray;
+  text-align: center;
 }
 .icon {
   margin-left: 7px;
@@ -177,11 +179,11 @@ margin-top: 45px;
 .para{
   margin-top: 0px;
   width: 40rem;
-  margin-left: 10px; 
   font-family: Arial, Helvetica, sans-serif; 
   font-size: 16px; 
   line-height: 28px; 
   color: #171A1FFF;
+  margin-left: -100px;
 }
 
 .popup{
@@ -239,6 +241,11 @@ margin-top: 45px;
 .popup-btn:disabled {
   opacity: 0.4; 
   }
+  .hidden:after {
+       background-color: rgba(0,0,0,0.5);
+    z-index: 9998;
+    color: #ffffff;
+  }
   .popup::before {
     content: "";
     position: fixed;
@@ -249,11 +256,7 @@ margin-top: 45px;
     background-color: #f2e8d9;
     z-index: -1;
   }
-  .hidden:after {
-       background-color: rgba(0,0,0,0.5);
-    z-index: 9998;
-    color: #ffffff;
-  }
+  
   /* Styles for desktop */
 .element {
   font-size: 20px;
