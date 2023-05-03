@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - homepagemarginanalyser
+name: Build and deploy Node.js app to Azure Web App - HomePageMarginAnalyser
 
 on:
   push:
@@ -50,7 +50,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'homepagemarginanalyser'
+          app-name: 'HomePageMarginAnalyser'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7FAFB6D5D4E346CB9ABED675B9F9E533 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_91D06F7081B043DD99ACE3F5346021FE }}
           package: .
